@@ -8,6 +8,7 @@
         const response = await fetch(apiURL);
         newData = (await response.json());
         console.log('Response:', newData);
+        mainStore.set(newData);
     }
     function handleClick () {
         getData();
