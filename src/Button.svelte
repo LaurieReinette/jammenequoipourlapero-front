@@ -2,8 +2,8 @@
     import { mainStore } from './stores.js';
     let newData = [];
 
-    const apiURL = "http://127.0.0.1:8001/random_products";
-
+    const apiURL = "http://jemmenequoipourlaperoback.lauriereinette.fr/api/random_products";
+    
     async function getData(){
         const response = await fetch(apiURL);
         newData = (await response.json());
@@ -18,7 +18,7 @@
 <div class="row">
     <div class="col-md-6 m-auto">
         <div class="text-center">
-            <button class="btn btn-primary bn632-hover bn21" type="button" on:click={handleClick}>Non, j'emmène autre chose</button>
+            <button class="btn btn-primary bn632-hover bn21" type="button" on:click={handleClick}>Non merci, j'emmène autre chose</button>
         </div>
     </div>
 </div>

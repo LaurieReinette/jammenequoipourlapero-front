@@ -7,7 +7,3 @@
 	<Nav/>
 	<Products/>
 </div>
-
-<style>
-
-</style>
