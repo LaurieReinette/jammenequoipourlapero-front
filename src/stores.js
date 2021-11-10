@@ -3,7 +3,7 @@ import { writable } from 'svelte/store';
 
 let data = [];
 
-const apiURL = "http://jemmenequoipourlaperoback.lauriereinette.fr/api/random_products";
+const apiURL = "https://jemmenequoipourlaperoback.lauriereinette.fr/api/random_products";
 
 async function getData(){
     const response = await fetch(apiURL);
