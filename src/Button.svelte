@@ -16,9 +16,9 @@
 </script>
 
 <div class="row">
-    <div class="col-md-6 m-auto">
+    <div class="col-md-6 mx-auto mb-3">
         <div class="text-center">
-            <button class="btn btn-primary bn632-hover bn21" type="button" on:click={handleClick}>Non merci, j'emmène autre chose</button>
+            <button class="btn btn-primary bn632-hover bn21" type="button" on:click={handleClick}>Non merci, une autre idée stp !</button>
         </div>
     </div>
 </div>
