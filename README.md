@@ -1,4 +1,4 @@
-**#A SvelteJS web app to get random french apritifs**
+**#A SvelteJS web app to get random french aperitifs**
 
 <https://www.jemmenequoipourlapero.fr/>
 
