@@ -1,5 +1,5 @@
 <script>
-    import { mainStore } from './stores.js';
+    import { productsStore } from './stores.js';
     let newData = [];
 
     const apiURL = "https://jemmenequoipourlaperoback.lauriereinette.fr/api/random_products";
@@ -7,10 +7,10 @@
     async function getData(){
         const response = await fetch(apiURL);
         newData = (await response.json());
-        console.log('Response:', newData);
-        mainStore.set(newData);
+        productsStore.set(newData);
     }
     function handleClick () {
+        window.scrollTo(0, 0);
         getData();
     }
 </script>

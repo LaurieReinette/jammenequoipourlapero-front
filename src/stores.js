@@ -2,15 +2,17 @@ import { writable } from 'svelte/store';
 
 
 let data = [];
+// let loader = false;
 
 const apiURL = "https://jemmenequoipourlaperoback.lauriereinette.fr/api/random_products";
 
-async function getData(){
+async function getData(){    
+
     const response = await fetch(apiURL);
     data = (await response.json());
-	// console.log('Response:', data);
-    mainStore.set(data)
+    productsStore.set(data);
 }
 getData();
 
-export const mainStore = writable(data);
+export const productsStore = writable(data);
+// export const loaderStore = writable(loader);

@@ -1,12 +1,12 @@
 
 <script>
-    import { mainStore } from './stores.js';
+    import { productsStore } from './stores.js';
     import Button from './Button.svelte';
 
 	let products = [];
 
 	//souscription au store , si modif les données seront rechargées automatiquement
-	mainStore.subscribe(data => {
+	productsStore.subscribe(data => {
         products = data
 	});
 </script>
@@ -31,8 +31,8 @@
 
 <style>
     img{
-        min-height: 500px;
-        max-height: 500px;
+        min-height: 200px;
+        max-height: 300px;
     }
     .card-body{
         background-image: url('/images/carreaux.jpg');
