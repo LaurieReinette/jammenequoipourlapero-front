@@ -3,4 +3,3 @@
 <https://www.jemmenequoipourlapero.fr/>
 
 Backend with Symfony
-<>
